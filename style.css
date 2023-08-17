@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .a4-sheet {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0.2cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: calc(29.7cm / 4);
+    background-image: url('https://i.pinimg.com/originals/f5/11/f5/f511f5d87892ee30bbe22b2fb107a0e4.gif'); /* Your provided cover image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 0.5cm;
+    position: relative;
+  }
+  
+  .display-picture {
+    background-image:url('https://twitter.com/ShekSahab_/photo');
+    width: 5cm;
+    height: 5cm;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255);
+    backdrop-filter: blur(3px); 
+    position: absolute;
+    left: 0.5cm;
+    bottom: 19.5cm;
+    z-index: 1; /* Ensure the display picture is above the background */
+  }
+  
+  .name {
+    font-family: 'Press Start 2P';
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 1cm);
+    left: 3.2cm;
+    bottom: 21cm;
+    z-index: 1;
+  }
+  
+  .bio {
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    width: calc(100% - 1cm);
+    left: 2.5cm;
+    bottom: 19.5cm;
+    z-index: 1;
+  }
+  /* ;;;;;;;;;;;;;; */
+  /* Existing styles... */
+  
+  .section-divider {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .section-divider:before,
+  .section-divider:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  /* Add styles for each section */
+  .projects-section,
+  .technology-section,
+  .blogs-section {
+    position: relative;
+  }
+  
+  .projects-section h2,
+  .technology-section h2,
+  .blogs-section h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    margin-left: -10cm;
+    font-family: 'Press Start 2P';
+    margin-top: 1rem;
+  }
+  /* ;;;;;;;;;;;;;; */
+  .section{
+    top: 120px; 
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ... (existing styles) ... */
+  
+  .project-card {
+    width: 6cm; /* Adjust width as needed */
+    height: 3cm; /* Adjust height as needed */
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: -33.5rem;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .project-icon {
+    width: 30%; /* Adjust icon width */
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-details {
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-details h3 {
+    font-size: 1rem;
+    font-family: 'Press Start 2P';
+    margin: 0;
+    color: white;
+  }
+  
+  .project-details p {
+    font-size: 0.6rem;
+    margin: 0.2rem 0 0;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+  }
+  
+  .project-buttons button {
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 0.6rem;
+  }
+  
+  .project-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* ... (existing styles) ... */
+  
+  
+  
